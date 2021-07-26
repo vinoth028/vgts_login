@@ -81,7 +81,7 @@ class _WebViewState extends State<WebViewWidget> {
 
   JavascriptChannel _toasterJavascriptChannel(BuildContext context) {
     return JavascriptChannel(
-        name: 'setPasscodeForMobile',
+        name: 'setUserForMobile',
         onMessageReceived: (JavascriptMessage msg) {
             Navigator.pop(context,msg.message);
             return;
